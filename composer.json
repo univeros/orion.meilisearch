@@ -1,0 +1,51 @@
+{
+    "name": "orion-search/meilisearch",
+    "description": "Orion engine adapter for Meilisearch on the official client: the neutral schema as index settings with Orion's declaration beside them, versioned writes with tombstones, aliases emulated by core, async tasks awaited",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "2am.tech",
+            "homepage": "https://2am.tech"
+        }
+    ],
+    "keywords": [
+        "search",
+        "meilisearch",
+        "reindex",
+        "hybrid-search",
+        "vector-search"
+    ],
+    "require": {
+        "php": ">=8.3",
+        "guzzlehttp/guzzle": "^7.9",
+        "meilisearch/meilisearch-php": "^1.17",
+        "orion-search/core": "^0.1"
+    },
+    "require-dev": {
+        "orion-search/testing": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orion\\Meilisearch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Orion\\Meilisearch\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
