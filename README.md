@@ -3,6 +3,10 @@
 Orion's engine adapter for Meilisearch 1.13 and later, on the official `meilisearch/meilisearch-php` client over
 Guzzle.
 
+```sh
+composer require orion-search/meilisearch
+```
+
 ```php
 use Orion\Meilisearch\MeilisearchEngine;
 use Orion\Registry\EngineRegistry;
@@ -41,3 +45,5 @@ determinism, fault-injection and endpoint-fixture suites on both. The property-b
 holds a vector search to the exact neighbours within a slack, runs on the current line only: 1.13's approximate
 index strays further and differently per build, so on that line a vector search returns neighbours the engine
 ranks nearest, not provably the k nearest.
+
+Connecting it and how it compares with the other engines: the [Engines guide](../../docs/guides/engines.md#meilisearch).
