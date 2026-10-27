@@ -20,10 +20,10 @@
         "php": ">=8.3",
         "guzzlehttp/guzzle": "^7.9",
         "meilisearch/meilisearch-php": "^1.17",
-        "orion-search/core": "^0.1"
+        "orion-search/core": "^1.0"
     },
     "require-dev": {
-        "orion-search/testing": "^0.1"
+        "orion-search/testing": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -37,7 +37,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "0.1.x-dev"
+            "dev-main": "1.0.x-dev"
         }
     },
     "config": {
